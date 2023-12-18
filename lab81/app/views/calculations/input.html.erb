@@ -1,0 +1,9 @@
+<h1>
+</h1>
+<p>Форма для введения данных</p>
+<%= form_tag("/calculations/result", :method => "get") do %>
+  <%= label_tag("Value:") %>
+  <%= text_field_tag(:v1,1) %> <br/>
+  <br/>
+  <%= submit_tag("Calc result") %>
+<% end %>
